@@ -1,6 +1,9 @@
+const chalk = require('chalk');
+const { DateTime } = require("luxon");
+
 exports.handler = async function () {
-  const date = new Date();
-  console.log(`Asking for Hello World at ${date}`);
+  const date = DateTime.now();
+  console.log(chalk.cyan(`${date}: Hello World`));
   return {
     statusCode: 200,
     body: JSON.stringify({
