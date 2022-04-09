@@ -1,12 +1,15 @@
 {
   "dependencies": {
+    "chalk": "^4.1.0",
     "node-fetch": "^3.2.3"
   },
   "name": "first-serverless-cynthiateeters",
   "description": "Learn how to use serverless functions in less than 30 minutes!",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "netlify-cli": "^9.16.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
