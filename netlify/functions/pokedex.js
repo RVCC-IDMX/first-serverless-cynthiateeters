@@ -1,5 +1,7 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const chalk = require('chalk');
+const { DateTime } = require("luxon");
+
 /*
 https://github.com/node-fetch/node-fetch/blob/HEAD/docs/v3-UPGRADE-GUIDE.md#converted-to-es-module
 
@@ -7,7 +9,7 @@ https://github.com/node-fetch/node-fetch/blob/HEAD/docs/v3-UPGRADE-GUIDE.md#conv
 
 exports.handler = async function (event, context) {
 
-  const date = new Date();
+ const date = DateTime.now();
 
   const eventBody = JSON.parse(event.body);
   console.log(chalk.magenta(`${date}`));
@@ -18,7 +20,7 @@ exports.handler = async function (event, context) {
   const response = await fetch(POKE_API);
   const data = await response.json();
 
-  console.log(chalk.cyanBright(`\tNumber of entries: ${data.pokemon_entries.length}`));
+  console.log(chalk.magenta(`\tNumber of entries: ${data.pokemon_entries.length}`));
 
   return {
     statusCode: 200,
