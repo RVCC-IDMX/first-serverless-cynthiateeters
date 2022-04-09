@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "node-fetch": "^3.2.3"
+  },
+  "name": "first-serverless-cynthiateeters",
+  "description": "Learn how to use serverless functions in less than 30 minutes!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RVCC-IDMX/first-serverless-cynthiateeters.git"
+  },
+  "author": "Cynthia Teeters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RVCC-IDMX/first-serverless-cynthiateeters/issues"
+  },
+  "homepage": "https://github.com/RVCC-IDMX/first-serverless-cynthiateeters#readme"
+}
