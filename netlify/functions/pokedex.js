@@ -4,7 +4,6 @@ const { DateTime } = require("luxon");
 
 /*
 https://github.com/node-fetch/node-fetch/blob/HEAD/docs/v3-UPGRADE-GUIDE.md#converted-to-es-module
-
 */
 
 exports.handler = async function (event, context) {
